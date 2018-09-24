@@ -1,0 +1,69 @@
+
+<div class="header-top">
+    <div class="top-usp"></div>
+
+    <ul class="links">
+
+        <li class="last">
+            <a href="https://www.sport24.dk/vipforside/">VIP kundeklub</a>
+            <div id="min-konto-extra" style="display: none;">
+                <div>
+                    <a href="https://www.sport24.dk/customer/account/create/">
+                        <span class="vip-icon vip-opret"></span><p>Opret <span>gratis</span> VIP konto</p>
+                    </a>
+                </div>
+                <div class="last">
+                    <a href="https://www.sport24.dk/customer/account/">
+                        <span class="vip-icon vip-my-account"></span><p>Min VIP konto</p>
+                    </a>
+                </div>
+            </div>
+            <div class="line"></div>
+        </li>
+    </ul>
+
+
+    <script type="text/javascript">
+
+        $j('#min-konto-extra').hide();
+
+        var sliding = false;
+        $j('.header-top .links li.last').hover(function(){
+            if(!sliding) {
+                sliding = true;
+                $j('#min-konto-extra').show(0, function() {
+                    sliding = false;
+                });
+            }
+        },function(){
+            if(!sliding) {
+                sliding = true;
+                $j('#min-konto-extra').hide(0, function() {
+                    sliding = false;
+                });
+            }
+        });
+
+
+    </script>            <ul class="links first">
+        <li>
+            <a href="https://www.sport24.dk/stores/" target="_self" class="sidebar__menu-extra">
+                Find butik &amp; åbningstider            </a>
+        </li>
+        <li>
+            <a href="https://www.sport24.dk/kundeservice/" target="_self" class="sidebar__menu-extra">
+                Kundeservice            </a>
+        </li>
+        <li>
+            <a href="https://www.sport24.dk/katalog/" target="_self" class="sidebar__menu-extra">
+                Katalog            </a>
+        </li>
+        <li>
+            <a href="https://blog.sport24.dk" target="_blank" class="sidebar__menu-extra">
+                Blog            </a>
+        </li>
+        <li>
+            <a href="https://www.sport24.dk/sport24-gavekort.html" target="_self" class="sidebar__menu-extra">
+                Gavekort            </a>
+        </li>
+    </ul>        </div>
